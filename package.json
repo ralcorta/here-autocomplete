@@ -1,0 +1,51 @@
+{
+  "name": "here-autocomplete",
+  "version": "1.0.0",
+  "description": "Autocomplete package for Here.com",
+  "main": "build/index.js",
+  "types": "build/index.d.js",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralcorta/here-autocomplete.git"
+  },
+  "keywords": [
+    "here",
+    "here.com",
+    "geolocation",
+    "autocomplete",
+    "oauth",
+    "api",
+    "promise",
+    "async",
+    "typescript",
+    "maps",
+    "input",
+    "ralcorta"
+  ],
+  "author": "Rodrigo Alcorta (ralcorta)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ralcorta/here-autocomplete/issues"
+  },
+  "homepage": "https://github.com/ralcorta/here-autocomplete#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.4.4",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.1.3"
+  }
+}
