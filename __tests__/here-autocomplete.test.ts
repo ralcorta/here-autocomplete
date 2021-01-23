@@ -9,14 +9,16 @@ describe('HereAutocompleteTest', () => {
     let hereAutocomplete: HereAutocomplete;
     let hereAutocompleteEndpoint: string = HereEndpointEnum.AUTOCOMPLETE;
     let hereOAuthEndpoint: string = HereEndpointEnum.OAUTH_TOKEN;
+    let accessKeyId: string = process.env.HERE_ACCESS_KEY_ID ?? 'KEY_ID';
+    let accessKeySecret: string = process.env.HERE_ACCESS_KEY_SECRET ?? 'KEY_SECRET';
     let query = {
         q: 'buenos aires'
     };
 
     beforeAll(() => {
         hereAutocomplete = new HereAutocomplete({
-            accessKeyId: process.env.HERE_ACCESS_KEY_ID ?? 'KEY_ID',
-            accessKeySecret: process.env.HERE_ACCESS_KEY_SECRET ?? 'KEY_SECRET',
+            accessKeyId,
+            accessKeySecret,
         })
 
         const fixture = require("./fixtures/here-locations.json");
