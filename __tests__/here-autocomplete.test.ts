@@ -1,8 +1,8 @@
 import { HereAutocomplete } from '../src/classes/here-autocomplete';
-import { GeolocationResultDTO } from '../src/dto/geolocation-query-result.dto';
 import { HereEndpointEnum } from '../src/enums/here.endpoint.enum';
 import nock from 'nock';
 import dotenv from 'dotenv';
+import { GeolocationResultDTO } from '../src/dto/geolocation-result.dto';
 dotenv.config();
 
 describe('HereAutocompleteTest', () => {

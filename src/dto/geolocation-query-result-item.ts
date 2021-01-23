@@ -1,4 +1,5 @@
-import { GeolocationQueryResultAddress, GeolocationQueryResultHighlights } from './geolocation-query-result.dto';
+import { GeolocationQueryResultAddress } from './geolocation-query-result-address';
+import { GeolocationQueryResultHighlights } from './geolocation-query-result-highlights';
 
 export class GeolocationQueryResultItem {
     title: string

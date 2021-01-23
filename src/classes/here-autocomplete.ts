@@ -2,12 +2,13 @@ import { IGeolocationAutocomplete } from '../interfaces/geolocation-autocomplete
 import { HereOAuthToken } from './here.oauth.token';
 import { IHereConfig } from '../interfaces/here.config.interface';
 import axios from 'axios';
-import { GeolocationResultDTO, GeolocationQueryResultDTO } from '../dto/geolocation-query-result.dto';
+import { GeolocationQueryResultDTO } from '../dto/geolocation-query-result.dto';
 import { IHereQuery } from '../interfaces/here-query.interface';
 import { HereEndpointEnum } from '../enums/here.endpoint.enum';
 import { IHereRequestConfig } from '../interfaces/here-request-config.interface';
 import { IHereHeaderConfig } from '../interfaces/here-header-config.interface';
 import { IHereOAuthTokenResponse } from '../interfaces/here.oauth.token-response.interface';
+import { GeolocationResultDTO } from '../dto/geolocation-result.dto';
 
 export class HereAutocomplete implements IGeolocationAutocomplete {
 

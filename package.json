@@ -1,6 +1,6 @@
 {
   "name": "here-autocomplete",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Autocomplete package for Here.com",
   "main": "build/index.js",
   "types": "build/index.d.js",

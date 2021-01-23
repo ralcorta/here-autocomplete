@@ -1,5 +1,5 @@
-import { GeolocationResultDTO } from '../dto/geolocation-query-result.dto';
 import { IHereQuery } from './here-query.interface';
+import { GeolocationResultDTO } from '../dto/geolocation-result.dto';
 
 /**
  * Interface for tpye here.com or another geoloaction service.
