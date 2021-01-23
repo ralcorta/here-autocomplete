@@ -22,8 +22,9 @@ export class HereAutocomplete implements IGeolocationAutocomplete {
 
     public async search(query: IHereQuery): Promise<GeolocationResultDTO> {
         try {
-            const config = await this.getHereRequestConfig({
-                params: { q: query.q }
+            const { q } = query;
+            const config: IHereRequestConfig = await this.getHereRequestConfig({
+                params: { q }
             });
             const result = await this._httpService.get<GeolocationQueryResultDTO>(HereEndpointEnum.AUTOCOMPLETE, config.params);
             const data: GeolocationResultDTO = { data: result.data };

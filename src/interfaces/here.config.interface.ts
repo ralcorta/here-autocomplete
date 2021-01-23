@@ -15,5 +15,5 @@ export interface IHereConfig {
     /**
      * OAuth token if exist.
      */
-    token: string
+    token?: string
 }
