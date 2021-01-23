@@ -63,10 +63,10 @@ export class HereOAuthToken {
                 secret: this._hereConfig.accessKeySecret,
             },
             signature_method: 'HMAC-SHA256',
-            hash_function(base_string, key) {
+            hash_function(base, key) {
                 return crypto
                     .createHmac('sha256', key)
-                    .update(base_string)
+                    .update(base)
                     .digest('base64')
             },
         });

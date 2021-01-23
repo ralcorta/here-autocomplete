@@ -33,7 +33,6 @@ describe('HereAutocompleteTest', () => {
 
     test('Here autocomplete happy path', async () => {
         const response: GeolocationResultDTO = await hereAutocomplete.search(query)
-        console.log(response);
         expect(response.data.items).toBeDefined();
         expect(response.data.items.length).toBeGreaterThan(0);
     });
