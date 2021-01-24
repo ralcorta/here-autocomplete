@@ -1,4 +1,4 @@
-export class GeolocationQueryResultAddress {
+export interface GeolocationQueryResultAddress {
     label: string
     countryCode: string
     countryName: string

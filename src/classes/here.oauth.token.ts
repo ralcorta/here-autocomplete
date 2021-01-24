@@ -1,10 +1,10 @@
-import { HereEndpointEnum } from '../enums/here.endpoint.enum';
-import { IHereConfig } from '../interfaces/here.config.interface';
-import { IHereOAuthTokenResponse } from '../interfaces/here.oauth.token-response.interface';
 import axios from 'axios';
 import OAuth from 'oauth-1.0a';
 import crypto from 'crypto';
 import qs from 'qs';
+import { HereEndpointEnum } from '../enums/here.endpoint.enum';
+import { IHereConfig } from '../interfaces/here.config.interface';
+import { IHereOAuthTokenResponse } from '../interfaces/here.oauth.token-response.interface';
 
 export class HereOAuthToken {
 

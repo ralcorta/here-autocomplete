@@ -2,8 +2,8 @@
   "name": "here-autocomplete",
   "version": "1.1.1",
   "description": "Autocomplete package for Here.com",
-  "main": "build/index.js",
-  "types": "build/index.d.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
@@ -15,6 +15,9 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ralcorta/here-autocomplete.git"

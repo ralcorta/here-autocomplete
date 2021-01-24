@@ -1,4 +1,4 @@
-import { GeolocationQueryResultItem } from './geolocation-query-result-item';
-export class GeolocationQueryResultDTO {
+import { GeolocationQueryResultItem } from '../interfaces/geolocation-query-result-item';
+export interface GeolocationQueryResultDTO {
     items: GeolocationQueryResultItem[]
 }
