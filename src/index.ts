@@ -1,7 +1,2 @@
-import { HereAutocomplete } from './classes/here-autocomplete';
-import { HereOAuthToken } from './classes/here.oauth.token';
-
-module.exports = {
-    HereAutocomplete,
-    HereOAuthToken
-}
+export * from './classes/here-autocomplete';
+export * from './classes/here.oauth.token';

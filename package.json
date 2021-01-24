@@ -3,7 +3,7 @@
   "version": "1.1.2",
   "description": "Autocomplete package for Here.com",
   "main": "dist/index.js",
-  "types": "dist/index.d.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
